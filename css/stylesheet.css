@@ -56,7 +56,7 @@ li {
   display: flex;
 }
 .flex-end {
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 .flex-center {
   align-items: center;
@@ -87,7 +87,7 @@ li {
 }
 .phone-number a {
   text-decoration: none;
-  padding: 24px;
+  padding: 15px;
   padding-left: 0;
 }
 .phone-number a:hover,
@@ -151,22 +151,21 @@ li {
   z-index: 99;
   color: white;
 }
-.banner-right img {
-  position: absolute;
-  top: 15vh;
-  left: -100px;
+.inner-main img {
   height: 70vh;
-  z-index: 0;
+}
+.inner-main {
+  gap: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: -100px;
 }
 .inner-content {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translate(-50%, 0%);
   white-space: nowrap;
+  justify-items: flex-end;
   width: 550px;
 }
-.inner-content p {
+.inner-content h2 {
   margin: 0;
 }
 #inner-para1 {
@@ -196,8 +195,7 @@ li {
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
-  padding-block: 10px;
-  padding-inline: 30px;
+  padding: 10px 60px 10px 40px;
   position: relative;
 }
 #inner-para-btn:hover {
