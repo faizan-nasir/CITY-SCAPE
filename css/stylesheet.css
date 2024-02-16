@@ -1,0 +1,243 @@
+/* External Font Embedding */
+
+@font-face {
+  font-family: "robotobold";
+  src: url("fonts/roboto-bold-webfont.woff2") format("woff2"),
+    url("fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotolight";
+  src: url("fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotothin";
+  src: url("fonts/roboto-thin-webfont.woff2") format("woff2"),
+    url("fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "robotoregular", "robotolight", "robotothin", sans-serif;
+  word-break: break-all;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+/* Global Classes */
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 10px;
+}
+.flex-all {
+  display: flex;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-even {
+  justify-content: space-evenly;
+}
+
+/* section 1 header styles */
+#section1 {
+  font-family: "robotothin", sans-serif;
+  background-color: #151517;
+  font-size: 16px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.phone-number img {
+  width: 20px;
+}
+.phone-number a {
+  text-decoration: none;
+  padding: 24px;
+  padding-left: 0;
+}
+.phone-number a:hover,
+.nav-btn:hover {
+  color: #ffb142;
+}
+.nav-btn {
+  padding: 24px;
+}
+/* nav ends here */
+
+/* Left Banner */
+.banner-left {
+  position: relative;
+  background-color: rgba(21, 21, 23, 1);
+  width: 30%;
+  color: white;
+  font-size: 18px;
+}
+.social-content {
+  position: absolute;
+  left: 10px;
+  bottom: 70px;
+}
+.social > * {
+  padding: 10px;
+}
+.social i:hover {
+  color: #ffb142;
+}
+.social::before {
+  content: "";
+  margin-block: 10px;
+  height: 80px;
+  width: 1px;
+  background-color: white;
+}
+.follow {
+  font-family: "robotthin", sans-serif;
+  font-size: 14px;
+
+  rotate: 270deg;
+  margin-inline: 10px;
+  padding-block: 45px;
+}
+/* Left Banner ends */
+
+/* Right Banner starts */
+.banner-right {
+  position: relative;
+  background: url("../images/Six.jpg") no-repeat center / cover;
+  width: 70%;
+  height: 100vh;
+}
+.mid-text {
+  position: absolute;
+  left: 150px;
+  top: 15vh;
+  letter-spacing: 15px;
+  font-size: 100px;
+  z-index: 99;
+  color: white;
+}
+.banner-right img {
+  position: absolute;
+  top: 15vh;
+  left: -100px;
+  height: 70vh;
+  z-index: 0;
+}
+.inner-content {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  white-space: nowrap;
+  width: 550px;
+}
+.inner-content p {
+  margin: 0;
+}
+#inner-para1 {
+  font-family: "robotobold", sans-serif;
+  color: white;
+  font-size: 24px;
+}
+#inner-para2 {
+  font-family: sans-serif;
+  font-weight: 900;
+  color: #ffb142;
+  font-size: 100px;
+}
+#inner-para3 {
+  font-family: "robotothin", "robotoregular", sans-serif;
+  color: white;
+  letter-spacing: 9px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+#inner-para-btn {
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid #ffb142;
+  display: inline-block;
+  font-family: "robotobold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-block: 10px;
+  padding-inline: 30px;
+  position: relative;
+}
+#inner-para-btn:hover {
+  background-color: #ffb142;
+}
+#inner-para-btn:after {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  /* right:0; */
+  transform: translate(50%, 90%);
+
+  padding-inline: 2px;
+}
+.slider {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: white;
+  color: #151517;
+}
+.slider i {
+  font-size: 35px;
+  padding-block: 25px;
+  padding-inline: 40px;
+}
+.slider i:hover {
+  color: #ffb142;
+  cursor: pointer;
+}
+/* right banner ends */
+
+/* Member Gallery section starts */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Member Gallery section ends */
