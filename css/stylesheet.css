@@ -74,7 +74,6 @@ li {
 /* section 1 header styles */
 #section1 {
   font-family: "robotothin", sans-serif;
-  background-color: #151517;
   font-size: 16px;
   position: fixed;
   width: 100%;
@@ -82,6 +81,7 @@ li {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
 .phone-number img {
   width: 20px;
 }
@@ -198,6 +198,7 @@ li {
   padding: 10px 60px 10px 40px;
   position: relative;
 }
+
 #inner-para-btn:hover {
   background-color: #ffb142;
 }
